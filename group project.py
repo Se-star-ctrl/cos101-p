@@ -1,0 +1,23 @@
+import streamlit as st
+French = {
+        'Hello' : 'Bonjour',
+        'Thank' : 'Merci',
+        'Water' : 'Eau',
+        'Sun' : 'Soleil',
+        'Oui' : 'Yes',
+        'Dog' : 'Chien',
+        'Cat' : 'Chat',
+        'Car' : 'Voiture',
+        'Tree' : 'Arbre',
+        'Road' : 'Route',
+        'School' : 'Ecole',
+        'Friend' : 'Ami',
+        'Phone' : 'Telephone',
+        'Chair' : 'Chaise',
+        'Table' : 'Table',
+        'Light' : 'Lumiere',
+        'Child' : 'Enfant',
+        'Work' : 'Travail',
+        'Love' : 'Amour',
+        'Music' : 'Musique',
+    }
