@@ -88,3 +88,36 @@ Hausa = {
     "bone": "Kashi",
 }
 
+
+choice = st.selectbox('language',('french','Igala','yoruba', 'hausa','Italiano'))
+word = st.text_input("Enter a word")
+def  search_dictionary(word, dictionary):
+    return dictionary[word]
+
+if choice == 'french':
+    dictionary = french
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+elif choice == 'Igala':
+    dictionary = Igala
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+elif choice == 'yoruba':
+    dictionary = yoruba
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+elif choice == 'hausa':
+    dictionary = hausa
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+elif choice == 'Italiano':
+    dictionary = Italiano
+    your_word = st.text_input('Enter Your word: ')
+    st.button('search', on_click = lambda:
+     st.title(search_dictionary(your_word.lower(), dictionary)))
+
+
