@@ -43,3 +43,25 @@ Igala = {
     "how was your day": "ele ne ojo che",
     "did you sleep well": "ma kpe chọ",
 } 
+Yoruba = {
+    "water": "omi",
+    "food": "ounje",
+    "house": "ile",
+    "man": "okunrin",
+    "woman": "obinrin",
+    "child": "omo",
+    "book": "iwe",
+    "school": "ile-iwe",
+    "sun": "oorun",
+    "moon": "osupa",
+    "dog": "aja",
+    "cat": "ologbo",
+    "road": "ona",
+    "car": "oko ayokele",
+    "money": "owo",
+    "friend": "ore",
+    "love": "ife",
+    "day": "ojo",
+    "night": "oru",
+    "teacher": "oluko"
+}
