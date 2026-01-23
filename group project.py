@@ -87,8 +87,28 @@ Hausa = {
     "horse": "doki",
     "bone": "Kashi",
 }
-
-
+Italiano = {
+        "love": "amore",
+        "Food": "Cibo",
+        "Friend": "Amigo",
+        "School": "Scuola",
+        "House": "Casa",
+        "Water": "Aqua",
+        "Book": "Libro",
+        "Car": "Macchina",
+        "Happy": "Felice",
+        "Work": "Lavoro",
+        "Car": "Macchina",
+        "Sun": "Sole",
+        "Moon": "Luna",
+        "Dog": "Cane",
+        "Day": "Giorno",
+        "Child": "Bambino",
+        "Road": "Strada",
+        "Teacher": "Insegnante",
+        "Music" : "Musica",
+        "Night": "Notte"
+}
 choice = st.selectbox('language',('french','Igala','yoruba', 'hausa','Italiano'))
 word = st.text_input("Enter a word")
 def  search_dictionary(word, dictionary):
@@ -119,5 +139,3 @@ elif choice == 'Italiano':
     your_word = st.text_input('Enter Your word: ')
     st.button('search', on_click = lambda:
      st.title(search_dictionary(your_word.lower(), dictionary)))
-
-
