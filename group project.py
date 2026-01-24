@@ -1,48 +1,46 @@
 import streamlit as st
+
+# --- Dictionaries ---
 French = {
-        'Hello' : 'Bonjour',
-        'Thank' : 'Merci',
-        'Water' : 'Eau',
-        'Sun' : 'Soleil',
-        'Oui' : 'Yes',
-        'Dog' : 'Chien',
-        'Cat' : 'Chat',
-        'Car' : 'Voiture',
-        'Tree' : 'Arbre',
-        'Road' : 'Route',
-        'School' : 'Ecole',
-        'Friend' : 'Ami',
-        'Phone' : 'Telephone',
-        'Chair' : 'Chaise',
-        'Table' : 'Table',
-        'Light' : 'Lumiere',
-        'Child' : 'Enfant',
-        'Work' : 'Travail',
-        'Love' : 'Amour',
-        'Music' : 'Musique',
+    'hello': 'bonjour',
+    'thank you': 'merci',
+    'water': 'eau',
+    'sun': 'soleil',
+    'dog': 'chien',
+    'cat': 'chat',
+    'car': 'voiture',
+    'tree': 'arbre',
+    'road': 'route',
+    'school': 'ecole',
+    'friend': 'ami',
+    'phone': 'telephone',
+    'chair': 'chaise',
+    'table': 'table',
+    'light': 'lumiere',
+    'child': 'enfant',
+    'work': 'travail',
+    'love': 'amour',
+    'music': 'musique',
 }
+
 Igala = {
     "come": "ya",
     "stand": "de",
     "sit": "kpe",
-    "Eat": "Unu",
+    "eat": "unu",
     "morning": "okpo",
     "night": "oche",
-    "we/us": "enye",
     "water": "omi",
     "drink": "mu",
-    "Face": "eji",
+    "face": "eji",
     "understand": "ma",
-    "how": "ele",
-    "long time": "akpa kpekpe",
     "school": "sukulu",
-    "Love": "Ufedo",
-    "tomorrow": "ojo ale",
-    "write": "kwo",
+    "love": "ufedo",
     "car": "moto",
-    "how was your day": "ele ne ojo che",
-    "did you sleep well": "ma kpe chọ",
-} 
+    "yes": "ee",
+    "mother": "iya"
+}
+
 Yoruba = {
     "water": "omi",
     "food": "ounje",
@@ -61,81 +59,69 @@ Yoruba = {
     "money": "owo",
     "friend": "ore",
     "love": "ife",
-    "day": "ojo",
-    "night": "oru",
-    "teacher": "oluko"
 }
+
 Hausa = {
     "chair": "kujera",
     "stone": "dutse",
     "bag": "jaka",
     "shoe": "takalmi",
-    "wrapper": "zani",
     "phone": "waya",
     "bed": "godo",
-    "food": "abichin",
-    "clothes": "kaya",
-    "plates": "kwanu",
-    "bottle": "gora" ,
-    "scissors": "almakachi",
-    "knife": "wuka",
-    "basket": "kwondo",
-    "house": "Gida",
-    "money": "kudi" ,
+    "food": "abinchi",
+    "house": "gida",
+    "money": "kudi",
     "car": "mota",
     "water": "ruwa",
-    "horse": "doki",
-    "bone": "Kashi",
+    "school": "makaranta",
+    "book": "littafi",
+    "friend": "aboki",
+    "teacher": "malami",
+    "help": "taimako",
+    "home": "gida",
+    "yes": "eh",
+    "no": "a'a",
+    "night": "dare",
+    "bread": "gurasa",
+    "afternoon": "rana"
 }
-Italiano = {
-        "love": "amore",
-        "Food": "Cibo",
-        "Friend": "Amigo",
-        "School": "Scuola",
-        "House": "Casa",
-        "Water": "Aqua",
-        "Book": "Libro",
-        "Car": "Macchina",
-        "Happy": "Felice",
-        "Work": "Lavoro",
-        "Car": "Macchina",
-        "Sun": "Sole",
-        "Moon": "Luna",
-        "Dog": "Cane",
-        "Day": "Giorno",
-        "Child": "Bambino",
-        "Road": "Strada",
-        "Teacher": "Insegnante",
-        "Music" : "Musica",
-        "Night": "Notte"
-}
-choice = st.selectbox('language',('french','Igala','yoruba', 'hausa','Italiano'))
-word = st.text_input("Enter a word")
-def  search_dictionary(word, dictionary):
-    return dictionary[word]
 
-if choice == 'french':
-    dictionary = french
-    your_word = st.text_input('Enter Your word: ')
-    st.button('search', on_click = lambda:
-     st.title(search_dictionary(your_word.lower(), dictionary)))
-elif choice == 'Igala':
-    dictionary = Igala
-    your_word = st.text_input('Enter Your word: ')
-    st.button('search', on_click = lambda:
-     st.title(search_dictionary(your_word.lower(), dictionary)))
-elif choice == 'yoruba':
-    dictionary = yoruba
-    your_word = st.text_input('Enter Your word: ')
-    st.button('search', on_click = lambda:
-     st.title(search_dictionary(your_word.lower(), dictionary)))
-elif choice == 'hausa':
-    dictionary = hausa
-    your_word = st.text_input('Enter Your word: ')
-    st.button('search', on_click = lambda:
-     st.title(search_dictionary(your_word.lower(), dictionary)))
-elif choice == 'Italiano':
-    dictionary = Italiano
-    your_word = st.text_input('Enter Your word: ')
-    st.button('search', on_click = lambda:
-     st.title(search_dictionary(your_word.lower(), dictionary)))
+
+Italiano = {
+    "love": "amore",
+    "food": "cibo",
+    "friend": "amico",
+    "school": "scuola",
+    "house": "casa",
+    "water": "acqua",
+    "book": "libro",
+    "car": "macchina",
+    "sun": "sole",
+    "moon": "luna",
+    "dog": "cane",
+    "day": "giorno",
+    "child": "bambino",
+    "road": "strada",
+    "teacher": "insegnante",
+    "music": "musica",
+    "night": "notte"
+}
+
+# --- Logic ---
+def search_dictionary(word, dictionary):
+    return dictionary.get(word, "❌ Word not found")
+
+choice = st.selectbox('Language', ('French','Igala','Yoruba','Hausa','Italiano'))
+your_word = st.text_input("Enter your word").lower()
+
+if st.button("Search"):
+    if choice == 'French':
+        st.success(search_dictionary(your_word, French))
+    elif choice == 'Igala':
+        st.success(search_dictionary(your_word, Igala))
+    elif choice == 'Yoruba':
+        st.success(search_dictionary(your_word, Yoruba))
+    elif choice == 'Hausa':
+        st.success(search_dictionary(your_word, Hausa))
+    elif choice == 'Italiano':
+        st.success(search_dictionary(your_word, Italiano))
